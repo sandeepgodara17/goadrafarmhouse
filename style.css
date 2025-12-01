@@ -18,7 +18,7 @@ body {
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
     ),
-    url("Back.jpeg") center/cover no-repeat;
+    url("Farm4.jpg") center/cover no-repeat;
     color: white;
     min-height: 60vh;
     display: flex;
@@ -192,5 +192,6 @@ body {
         font-size: 2rem;
     }
 }
+
 
 
