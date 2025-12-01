@@ -177,17 +177,32 @@
 
             <!-- Simple Contact Form (not functional without backend, but good for exam) -->
             <form class="contact-form">
-                <label for="name">Your Name</label>
-                <input id="name" type="text" placeholder="Enter your name">
+    <label for="name">Full Name</label>
+    <input id="name" type="text" placeholder="Enter your full name" required>
 
-                <label for="phone">Phone Number</label>
-                <input id="phone" type="text" placeholder="Enter your phone number">
+    <label for="phone">Phone Number</label>
+    <input id="phone" type="tel" placeholder="Enter your phone number" required>
 
-                <label for="message">Message</label>
-                <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+    <label for="date">Preferred Visit Date</label>
+    <input id="date" type="date">
 
-                <button type="submit" class="btn">Send Message</button>
-            </form>
+    <label for="guests">Number of Guests</label>
+    <input id="guests" type="number" min="1" max="200" placeholder="e.g. 4">
+
+    <label for="type">Booking Type</label>
+    <select id="type">
+        <option value="day">Day Picnic</option>
+        <option value="stay">Stay (1 Night)</option>
+        <option value="event">Small Event / Function</option>
+        <option value="other">Other</option>
+    </select>
+
+    <label for="message">Extra Details</label>
+    <textarea id="message" rows="4" placeholder="Write any special request or timing"></textarea>
+
+    <button type="submit" class="btn">Submit Enquiry</button>
+</form>
+
         </section>
     </main>
 
@@ -204,6 +219,7 @@
 
 
 </body></html>
+
 
 
 
