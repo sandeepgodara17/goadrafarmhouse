@@ -12,17 +12,37 @@ body {
     color: #222;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.4),
-        rgba(0, 0, 0, 0.4)
-    ),
-    url("Farm4.jpg") center/cover no-repeat;
-    color: white;
-    min-height: 60vh;
+/* Hero Slideshow */
+.hero-slideshow {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+/* Background images */
+.hero-slideshow::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 18s infinite;
+    z-index: -1;
+    filter: brightness(60%);
+}
+
+/* Animation for slideshow */
+@keyframes slideshow {
+    0%   { background-image: url('Farm1.jpg'); }
+    33%  { background-image: url('Farm2.jpg'); }
+    66%  { background-image: url('Farm3.jpg'); }
+    100% { background-image: url('Fram5.jpg'); }
 }
 
 /* Navigation bar */
@@ -367,5 +387,6 @@ body {
     color: #f4b400; /* gold-like stars */
     font-size: 1rem;
 }
+
 
 
