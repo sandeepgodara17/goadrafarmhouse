@@ -291,5 +291,18 @@ body {
 }
 
 
+/* Map */
+.map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+}
+
 
 
