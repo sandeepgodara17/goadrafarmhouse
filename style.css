@@ -669,6 +669,74 @@ h1, h2, h3, .logo {
     }
 }
 
+/* UPDATES SECTION */
+.updates-section {
+    background-color: #f4e7d4;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.updates-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+
+/* Box container */
+.updates-box {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Individual update box */
+.update-item {
+    background: #ffffff;
+    padding: 18px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 6px solid #d6a64a; /* Gold strip */
+}
+
+.update-item h3 {
+    margin-bottom: 6px;
+    font-size: 1.2rem;
+    color: #00334d;
+}
+
+.update-item p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.update-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #d6a64a;
+    color: #00334d;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.update-btn:hover {
+    background-color: #c29236;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+    .update-item {
+        padding: 16px;
+    }
+}
+
 
 
 
